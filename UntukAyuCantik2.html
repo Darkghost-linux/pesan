@@ -1,379 +1,486 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport"/>
-  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8"/>
 
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport"/>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 
-  <link href="https://feeldreams.github.io/night/style.css" rel="stylesheet" type="text/css"/>
 
-  <title>Untuk Ayu Cantik</title>
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <style>
-    /* Menyembunyikan YouTube Player */
-    #youtube-player-container {
-      position: fixed;
-      width: 1px;
-      height: 1px;
-      left: -9999px;
-      top: -9999px;
-      opacity: 0;
-      pointer-events: none;
-      overflow: hidden;
-    }
-  </style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+<!-- SWEET ALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+
+<!-- STYLE ASLI -->
+<link href="https://feeldreams.github.io/night/style.css" rel="stylesheet" type="text/css"/>
+
+
+<title>Untuk Ayu Cantik</title>
+
+
+<style>
+
+/* =========================================
+   YOUTUBE PLAYER DISEMBUNYIKAN
+   ========================================= */
+
+#youtube-player-container {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    left: -1000px;
+    top: -1000px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+</style>
+
 </head>
+
 
 <body>
 
-  <!-- =========================================
-       YOUTUBE PLAYER
-       Video ID: 3Y7G2lePHUQ
-       ========================================= -->
-  <div id="youtube-player-container">
+
+<!-- =========================================
+     YOUTUBE PLAYER
+     ========================================= -->
+
+<div id="youtube-player-container">
+
     <div id="youtube-player"></div>
-  </div>
+
+</div>
 
 
-  <!-- =========================================
-       BACKGROUND
-       ========================================= -->
-  <div id="bodyblur">
+<!-- =========================================
+     BACKGROUND
+     ========================================= -->
+
+<div id="bodyblur">
 
     <!-- Wallpaper -->
+
     <img
-      src="https://i.pinimg.com/236x/b4/d7/3e/b4d73e7693ac71c9452792dd50267514.jpg"
-      id="wallpaper"
+        src="https://i.pinimg.com/236x/b4/d7/3e/b4d73e7693ac71c9452792dd50267514.jpg"
+        id="wallpaper"
     />
 
     <div id="beneranblur"></div>
-  </div>
+
+</div>
 
 
-  <!-- =========================================
-       CONTENT
-       ========================================= -->
-  <div id="Content">
+<!-- =========================================
+     CONTENT
+     ========================================= -->
 
-    <!-- Tombol Kado -->
+<div id="Content">
+
+
+    <!-- =====================================
+         KADO
+         ===================================== -->
+
     <div id="suratin" onClick="memulai();">
 
-      <!-- Tombol Surat -->
-      <img src="https://feeldreams.github.io/kadoin.png"/>
+        <img src="https://feeldreams.github.io/kadoin.png"/>
 
     </div>
 
-    <p id="ket">Klik Kadonya!</p>
+
+    <p id="ket">
+        Klik Kadonya!
+    </p>
 
 
-    <!-- =========================================
+    <!-- =====================================
          STIKER
-         ========================================= -->
+         ===================================== -->
+
     <div class="kumpulanstiker">
 
-      <!-- Stiker untuk Konten -->
-      <img
-        src="https://feeldreams.github.io/pusn.gif"
-        id="stiker1"
-      />
 
-      <img
-        src="https://feeldreams.github.io/bunga.gif"
-        id="stiker2"
-      />
+        <!-- Stiker 1 -->
 
-      <img
-        src="https://feeldreams.github.io/mndkat.gif"
-        id="stiker3"
-      />
-
-      <img
-        src="https://feeldreams.github.io/smprt.gif"
-        id="stiker4"
-      />
-
-      <img
-        src="https://feeldreams.github.io/ngumpet.gif"
-        id="stiker5"
-      />
+        <img
+            src="https://feeldreams.github.io/pusn.gif"
+            id="stiker1"
+        />
 
 
-      <!-- Stiker Akhiran -->
-      <img
-        src="https://feeldreams.github.io/bunga.gif"
-        id="stiker"
-      />
+        <!-- Stiker 2 -->
+
+        <img
+            src="https://feeldreams.github.io/bunga.gif"
+            id="stiker2"
+        />
+
+
+        <!-- Stiker 3 -->
+
+        <img
+            src="https://feeldreams.github.io/mndkat.gif"
+            id="stiker3"
+        />
+
+
+        <!-- Stiker 4 -->
+
+        <img
+            src="https://feeldreams.github.io/smprt.gif"
+            id="stiker4"
+        />
+
+
+        <!-- Stiker 5 -->
+
+        <img
+            src="https://feeldreams.github.io/ngumpet.gif"
+            id="stiker5"
+        />
+
+
+        <!-- Stiker Akhir -->
+
+        <img
+            src="https://feeldreams.github.io/bunga.gif"
+            id="stiker"
+        />
 
     </div>
 
 
-    <p id="halo">Good Night!</p>
+    <p id="halo">
+        Good Night!
+    </p>
 
 
-    <!-- =========================================
+    <!-- =====================================
          PESAN AWAL
-         ========================================= -->
+         ===================================== -->
+
     <script class="sembunyi">
 
-      async function pesanAwal() {
+    async function pesanAwal() {
 
         suratin.style = "display:none";
+
         ket.style = "display:none";
 
 
         await swalst.fire({
-          title: 'Hai, Ayu Sayangg❤️',
-          imageUrl: '' + stiker1.src,
+
+            title: 'Hai, Ayu Sayangg❤️',
+
+            imageUrl: '' + stiker1.src,
+
         });
 
 
         await swalst.fire({
-          title: 'Aku Cuma Mau Bilang 😍',
-          imageUrl: '' + stiker2.src,
+
+            title: 'Aku Cuma Mau Bilang 😍',
+
+            imageUrl: '' + stiker2.src,
+
         });
 
 
         await swalst.fire({
-          title: 'Good Night ya! 🤭❤️',
-          imageUrl: '' + stiker3.src,
+
+            title: 'Good Night ya! 🤭❤️',
+
+            imageUrl: '' + stiker3.src,
+
         });
 
 
         await swalst.fire({
-          title: 'Gabole Tidur Malem² 😡❤️',
-          imageUrl: '' + stiker4.src,
+
+            title: 'Gabole Tidur Malem² 😡❤️',
+
+            imageUrl: '' + stiker4.src,
+
         });
 
 
         await swalst.fire({
-          title: 'Aku Takut Ayang Sakit loh 🥺❤️',
-          imageUrl: '' + stiker5.src,
+
+            title: 'Aku Takut Ayang Sakit loh 🥺❤️',
+
+            imageUrl: '' + stiker5.src,
+
         });
 
 
         mulaikonten();
 
-      }
+    }
 
     </script>
 
 
-    <!-- =========================================
-         KONTEN PESAN
-         ========================================= -->
+    <!-- =====================================
+         PESAN UTAMA
+         ===================================== -->
+
     <div>
 
-      <blockquote id="bq">
-
-        <!-- Konten Pembukaan -->
-
-        <p id="kalimat">
-          Dah Segitu Aja ya..🤭❤️
-        </p>
+        <blockquote id="bq">
 
 
-        <p id="kalimat2">
-          Selamat melepas lelah, jangan lupa baca doa sama bersih-bersih dulu sebelum bobo 😍 ...
-          Semangat buat besok ujian nya yaa.. 🥳
-        </p>
+            <p id="kalimat">
+                Dah Segitu Aja ya..🤭❤️
+            </p>
 
 
-        <p id="kalimatbawah">
-          I Love You ❤️
-        </p>
+            <p id="kalimat2">
+                Selamat melepas lelah, jangan lupa baca doa sama bersih-bersih dulu sebelum bobo 😍 ... Semangat buat besok ujian nya yaa.. 🥳
+            </p>
 
 
-        <p id="kalimatbawah2" class="sembunyi">
-          Good Night ❤️
-        </p>
+            <p id="kalimatbawah">
+                I Love You ❤️
+            </p>
 
 
-        <p id="kalimatbawah3" class="sembunyi">
-          Mimpi Indah ya ❤️
-        </p>
+            <p id="kalimatbawah2" class="sembunyi">
+                Good Night ❤️
+            </p>
 
-      </blockquote>
+
+            <p id="kalimatbawah3" class="sembunyi">
+                Mimpi Indah ya ❤️
+            </p>
+
+
+        </blockquote>
 
     </div>
 
 
-    <!-- =========================================
-         TOMBOL BALAS
-         ========================================= -->
+    <!-- =====================================
+         TOMBOL WHATSAPP
+         ===================================== -->
+
     <div id="Tombol">
 
-      <a onClick="multifungsi()">
+        <a onClick="multifungsi()">
 
-        <b id="tmbl">
-          💌Balas ke Ayang
-        </b>
+            <b id="tmbl">
+                💌Balas ke Ayang
+            </b>
 
-      </a>
+        </a>
 
     </div>
 
 
-    <!-- =========================================
+    <!-- =====================================
          PESAN WHATSAPP
-         ========================================= -->
+         ===================================== -->
+
     <span id="pesanWA" class="sembunyi">
-      Good Night too
+        Good Night too
     </span>
 
-  </div>
+
+</div>
 
 
-  <!-- =========================================
-       SCRIPT UTAMA
-       ========================================= -->
 
-  <script>
+<!-- =========================================
+     SCRIPT UTAMA
+     ========================================= -->
 
-    /* =========================================
-       VARIABEL
-       ========================================= */
-
-    ftom = 0;
-    aksift = 0;
-    ftganti = 0;
-    flag = 1;
-    flagg = 1;
-    fungsi = 0;
-    fungsiAwal = 0;
-    fungsitimer = 0;
-
-    vketikhalo = halo.innerHTML;
-
-    halo.innerHTML = "";
-
-    var ahalo = 0;
-    var vketikhalo;
-
-    pesanwhatsapp = pesanWA.innerHTML;
-
-    Content.style = "opacity:1;margin-top:16vh;";
+<script>
 
 
-    /* =========================================
-       YOUTUBE PLAYER
-       ========================================= */
+/* =========================================
+   VARIABEL ASLI
+   ========================================= */
 
-    var youtubePlayer;
+ftom = 0;
 
-    var youtubeReady = false;
+aksift = 0;
 
-    var youtubeVideoID = "3Y7G2lePHUQ";
+ftganti = 0;
+
+flag = 1;
+
+flagg = 1;
+
+fungsi = 0;
+
+fungsiAwal = 0;
+
+fungsitimer = 0;
+
+vketikhalo = halo.innerHTML;
+
+halo.innerHTML = "";
+
+var ahalo = 0;
+
+var vketikhalo;
+
+pesanwhatsapp = pesanWA.innerHTML;
+
+Content.style = "opacity:1;margin-top:16vh;";
 
 
-    /*
-      Memuat YouTube IFrame API
-    */
 
-    var tag = document.createElement("script");
-
-    tag.src = "https://www.youtube.com/iframe_api";
-
-    var firstScriptTag =
-      document.getElementsByTagName("script")[0];
-
-    firstScriptTag.parentNode.insertBefore(
-      tag,
-      firstScriptTag
-    );
+/* =========================================
+   YOUTUBE PLAYER
+   ========================================= */
 
 
-    /*
-      Fungsi ini otomatis dipanggil
-      oleh YouTube setelah API siap.
-    */
+/*
+   ID VIDEO YOUTUBE
+*/
 
-    function onYouTubeIframeAPIReady() {
+var youtubeVideoID = "3Y7G2lePHUQ";
 
-      youtubePlayer = new YT.Player(
+
+/*
+   Variabel player
+*/
+
+var youtubePlayer = null;
+
+var youtubeReady = false;
+
+
+
+/*
+   Load YouTube API
+*/
+
+var tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/iframe_api";
+
+
+var firstScriptTag =
+document.getElementsByTagName("script")[0];
+
+
+firstScriptTag.parentNode.insertBefore(
+    tag,
+    firstScriptTag
+);
+
+
+
+/*
+   YouTube API siap
+*/
+
+function onYouTubeIframeAPIReady() {
+
+
+    youtubePlayer = new YT.Player(
         "youtube-player",
         {
 
-          height: "1",
-          width: "1",
+            height: "1",
 
-          videoId: youtubeVideoID,
+            width: "1",
 
-          playerVars: {
+            videoId: youtubeVideoID,
 
-            autoplay: 0,
 
-            controls: 0,
+            playerVars: {
 
-            disablekb: 1,
+                autoplay: 0,
 
-            fs: 0,
+                controls: 0,
 
-            modestbranding: 1,
+                disablekb: 1,
 
-            rel: 0,
+                fs: 0,
 
-            playsinline: 1,
+                rel: 0,
 
-            loop: 1,
+                playsinline: 1,
 
-            playlist: youtubeVideoID
+                modestbranding: 1,
 
-          },
+                loop: 1,
 
-          events: {
-
-            onReady: function(event) {
-
-              youtubeReady = true;
+                playlist: youtubeVideoID
 
             },
 
-            onStateChange: function(event) {
 
-              /*
-                Jika lagu selesai,
-                ulangi dari awal.
-              */
+            events: {
 
-              if (
-                event.data ===
-                YT.PlayerState.ENDED
-              ) {
+                onReady: function(event) {
 
-                event.target.playVideo();
+                    youtubeReady = true;
 
-              }
+                },
+
+
+                onStateChange: function(event) {
+
+                    /*
+                       Kalau lagu selesai,
+                       ulang dari awal.
+                    */
+
+                    if (
+                        event.data ===
+                        YT.PlayerState.ENDED
+                    ) {
+
+                        event.target.playVideo();
+
+                    }
+
+                }
 
             }
 
-          }
-
         }
-      );
+    );
 
-    }
+}
 
 
-    /* =========================================
-       MEMULAI MUSIK
-       ========================================= */
 
-    function mulaiMusik() {
+/* =========================================
+   PLAY MUSIK
+   ========================================= */
 
-      if (
+function mulaiMusik() {
+
+
+    if (
         youtubeReady &&
         youtubePlayer
-      ) {
+    ) {
 
         youtubePlayer.unMute();
 
@@ -381,147 +488,166 @@
 
         youtubePlayer.playVideo();
 
-      }
-
     }
 
-
-    /* =========================================
-       FUNGSI MEMULAI
-       ========================================= */
-
-    async function memulai() {
-
-      /*
-        Mulai musik ketika
-        tombol kado diklik.
-      */
-
-      mulaiMusik();
+}
 
 
-      /*
-        Jalankan pesan awal.
-      */
 
-      pesanAwal();
-
-    }
+/* =========================================
+   FUNGSI MEMULAI KADO
+   ========================================= */
 
 
-    /* =========================================
-       WHATSAPP
-       ========================================= */
+/*
+   PENTING:
 
-    async function menuju() {
+   Fungsi ini tetap menggunakan
+   pesanAwal() seperti kode asli.
 
-      window.location =
-        "https://wa.me/6282280118081?text=" +
-        encodeURIComponent(pesanwhatsapp);
+   Musik hanya ditambahkan di sini.
+*/
 
-    }
-
-
-    /* =========================================
-       SWEETALERT
-       ========================================= */
-
-    const body =
-      document.querySelector("body");
+function memulai() {
 
 
-    const swalst =
-      Swal.mixin({
+    /* Mulai YouTube */
 
-        timer: 2300,
-
-        allowOutsideClick: false,
-
-        showConfirmButton: false,
-
-        timerProgressBar: true,
-
-        imageHeight: 90,
-
-      });
+    mulaiMusik();
 
 
-    const swals =
-      Swal.mixin({
+    /* Jalankan pesan asli */
 
-        allowOutsideClick: false,
+    pesanAwal();
 
-        cancelButtonColor: '#FF0040',
-
-        imageWidth: 100,
-
-        imageHeight: 100,
-
-      });
+}
 
 
-    /* =========================================
-       ANIMASI HATI
-       ========================================= */
 
-    function createHeart() {
+/* =========================================
+   WHATSAPP
+   ========================================= */
 
-      const heart =
-        document.createElement("div");
+async function menuju() {
 
 
-      heart.className =
-        "fas fa-heart";
+    window.location =
+    "https://wa.me/6282280118081?text=" +
+    encodeURIComponent(pesanwhatsapp);
 
 
-      heart.style.left =
-        (Math.random() * 90) + "vw";
+}
 
 
-      heart.style.animationDuration =
-        (Math.random() * 3) + 2 + "s";
+
+/* =========================================
+   SWEET ALERT
+   ========================================= */
+
+const body =
+document.querySelector("body");
 
 
-      body.appendChild(heart);
+const swalst =
+Swal.mixin({
 
-    }
+    timer: 2300,
+
+    allowOutsideClick: false,
+
+    showConfirmButton: false,
+
+    timerProgressBar: true,
+
+    imageHeight: 90,
+
+});
 
 
-    setInterval(
+const swals =
+Swal.mixin({
 
-      function name(params) {
+    allowOutsideClick: false,
+
+    cancelButtonColor: '#FF0040',
+
+    imageWidth: 100,
+
+    imageHeight: 100,
+
+});
+
+
+
+/* =========================================
+   ANIMASI HATI
+   ========================================= */
+
+function createHeart() {
+
+
+    const heart =
+    document.createElement("div");
+
+
+    heart.className =
+    "fas fa-heart";
+
+
+    heart.style.left =
+    (Math.random() * 90) + "vw";
+
+
+    heart.style.animationDuration =
+    (Math.random() * 3) + 2 + "s";
+
+
+    body.appendChild(heart);
+
+}
+
+
+
+setInterval(
+
+    function() {
+
 
         var heartArr =
-          document.querySelectorAll(
+        document.querySelectorAll(
             ".fa-heart"
-          );
+        );
 
 
-        if (heartArr.length > 100) {
+        if (
+            heartArr.length > 100
+        ) {
 
-          heartArr[0].remove();
+            heartArr[0].remove();
 
         }
 
-      },
 
-      100
+    },
 
-    );
+    100
 
-  </script>
+);
 
-
-  <!-- =========================================
-       SCRIPT FEELDREAMS
-       ========================================= -->
-
-  <script
-    src="https://feeldreams.github.io/night/script.js">
-  </script>
+</script>
 
 
-  <!-- Sampai Sini -->
+
+<!-- =========================================
+     SCRIPT ASLI FEELDREAMS
+     ========================================= -->
+
+<script
+src="https://feeldreams.github.io/night/script.js">
+</script>
+
 
 </body>
+
 </html>
+```
